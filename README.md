@@ -1,13 +1,13 @@
 # [<img src="nmw-logo.png" alt="NMW Logo" width="40" height="40">](https://github.com/newmediaworks) [NMW OSS](https://github.com/newmediaworks/nmw-oss) / [Javadoc Resources](https://github.com/newmediaworks/nmw-javadoc-resources)
 <p>
-	<a href="https://aoindustries.com/life-cycle#project-alpha">
-		<img src="https://oss.newmediaworks.com/ao-badges/project-alpha.svg" alt="project: alpha" />
+	<a href="https://aoindustries.com/life-cycle#project-current-stable">
+		<img src="https://oss.newmediaworks.com/ao-badges/project-current-stable.svg" alt="project: current stable" />
 	</a>
-	<a href="https://aoindustries.com/life-cycle#management-preview">
-		<img src="https://oss.newmediaworks.com/ao-badges/management-preview.svg" alt="management: preview" />
+	<a href="https://aoindustries.com/life-cycle#management-production">
+		<img src="https://oss.newmediaworks.com/ao-badges/management-production.svg" alt="management: production" />
 	</a>
-	<a href="https://aoindustries.com/life-cycle#packaging-developmental">
-		<img src="https://oss.newmediaworks.com/ao-badges/packaging-developmental.svg" alt="packaging: developmental" />
+	<a href="https://aoindustries.com/life-cycle#packaging-active">
+		<img src="https://oss.newmediaworks.com/ao-badges/packaging-active.svg" alt="packaging: active" />
 	</a>
 	<br />
 	<a href="http://semver.org/spec/v2.0.0.html">

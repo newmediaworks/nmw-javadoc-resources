@@ -39,9 +39,9 @@ along with nmw-javadoc-resources.  If not, see <http://www.gnu.org/licenses />.
 		<header>
 			<ao:include
 				page="/ao-badges/badges.inc.jspx"
-				arg.projectStatus="alpha"
-				arg.managementStatus="preview"
-				arg.packagingStatus="developmental"
+				arg.projectStatus="current-stable"
+				arg.managementStatus="production"
+				arg.packagingStatus="active"
 				arg.semanticVersioning="2.0.0"
 				arg.license="lgpl-3.0"
 			/>
