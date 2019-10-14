@@ -36,6 +36,7 @@ along with nmw-javadoc-resources.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2019-10-13T22:22:56-0500"
+		dateModified="2019-10-13T22:58:55-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.newmediaworks:nmw-javadoc-resources:pom.version}" />
@@ -52,7 +53,7 @@ along with nmw-javadoc-resources.  If not, see <http://www.gnu.org/licenses />.
 				scmUrl="@{documented.scm.url}"
 			>
 				<ul>
-					<li>New project for Javadoc resources for AO-branded projects.</li>
+					<li>New project for Javadoc resources for NMW-branded projects.</li>
 					<li>Added images to save space by avoiding "data:" URL on each page:
 						<ol>
 							<li><code>nmw-javadoc-resources/nmw-logo.png</code></li>
