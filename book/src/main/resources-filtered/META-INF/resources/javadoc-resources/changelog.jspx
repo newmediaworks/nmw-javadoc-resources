@@ -36,7 +36,7 @@ along with nmw-javadoc-resources.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2019-10-13T22:22:56-0500"
-		dateModified="2019-10-13T22:58:55-0500"
+		dateModified="2019-10-14T01:41:01-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.newmediaworks:nmw-javadoc-resources:pom.version}" />
@@ -51,21 +51,30 @@ along with nmw-javadoc-resources.  If not, see <http://www.gnu.org/licenses />.
 				groupId="@{documented.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{documented.scm.url}"
-			>
-				<ul>
-					<li>New project for Javadoc resources for NMW-branded projects.</li>
-					<li>Added images to save space by avoiding "data:" URL on each page:
-						<ol>
-							<li><code>nmw-javadoc-resources/nmw-logo.png</code></li>
-							<li><code>nmw-javadoc-resources/fork-me.png</code></li>
-						</ol>
-					</li>
-					<li>
-						Added <code>resources/fonts/dejavu.css</code> to avoid 404's due to
-						<ao:a href="https://bugs.openjdk.java.net/browse/JDK-8129828">JDK bug 8129828</ao:a>.
-					</li>
-				</ul>
-			</changelog:release>
+			/>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.0.0"
+			datePublished="2019-10-14T01:41:01-0500"
+			groupId="@{documented.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{documented.scm.url}"
+		>
+			<ul>
+				<li>New project for Javadoc resources for NMW-branded projects.</li>
+				<li>Added images to save space by avoiding "data:" URL on each page:
+					<ol>
+						<li><code>nmw-javadoc-resources/nmw-logo.png</code></li>
+						<li><code>nmw-javadoc-resources/fork-me.png</code></li>
+					</ol>
+				</li>
+				<li>
+					Added <code>resources/fonts/dejavu.css</code> to avoid 404's due to
+					<ao:a href="https://bugs.openjdk.java.net/browse/JDK-8129828">JDK bug 8129828</ao:a>.
+				</li>
+			</ul>
+		</changelog:release>
 	</core:page>
 </jsp:root>
