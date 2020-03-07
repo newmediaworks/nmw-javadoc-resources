@@ -29,32 +29,28 @@ along with nmw-javadoc-resources.  If not, see <http://www.gnu.org/licenses />.
 		<relativePath>../../parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>com.newmediaworks</groupId><artifactId>nmw-javadoc-resources-book</artifactId><version>1.0.0-POST-SNAPSHOT</version>
+	<groupId>com.newmediaworks</groupId><artifactId>nmw-javadoc-resources-book</artifactId><version>1.0.1-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 
 	<properties>
 		<!-- These values are copied from the project being documented -->
-		<documented.groupId>com.newmediaworks</documented.groupId><documented.artifactId>nmw-javadoc-resources</documented.artifactId>
+		<documented.artifactId>nmw-javadoc-resources</documented.artifactId>
 		<documented.name>NMW Javadoc Resources</documented.name>
 		<documented.shortTitle>Javadoc Resources</documented.shortTitle>
-		<documented.url>https://oss.newmediaworks.com/javadoc-resources/</documented.url>
 		<documented.description>Javadoc resources for NMW-branded projects.</documented.description>
-		<documented.inceptionYear>2019</documented.inceptionYear>
-		<documented.scm.url>https://github.com/newmediaworks/${documented.artifactId}</documented.scm.url>
 
-		<description.html><![CDATA[Documentation for <a target="_top" href="${documented.url}">${documented.name}</a> in <a target="_top" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
+		<description.html><![CDATA[Documentation for <a target="_top" href="${project.url}">${documented.name}</a> in <a target="_top" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
 	</properties>
 
-	<name>${documented.name} Book</name>
-	<url>${documented.url}</url>
-	<description>Documentation for ${documented.name} in SemanticCMS format.</description>
-	<inceptionYear>${documented.inceptionYear}</inceptionYear>
+	<name>NMW Javadoc Resources Book</name>
+	<url>https://oss.newmediaworks.com/javadoc-resources/</url>
+	<description>Documentation for NMW Javadoc Resources in SemanticCMS format.</description>
+	<inceptionYear>2019</inceptionYear>
 
 	<scm>
-		<!-- Can't inherit due to multi-module -->
-		<connection>scm:git:git://github.com/newmediaworks/${documented.artifactId}.git</connection>
-		<developerConnection>scm:git:git@github.com:newmediaworks/${documented.artifactId}.git</developerConnection>
-		<url>${documented.scm.url}</url>
+		<connection>scm:git:git://github.com/newmediaworks/nmw-javadoc-resources.git</connection>
+		<developerConnection>scm:git:git@github.com:newmediaworks/nmw-javadoc-resources.git</developerConnection>
+		<url>https://github.com/newmediaworks/nmw-javadoc-resources</url>
 		<tag>HEAD</tag>
 	</scm>
 
@@ -62,7 +58,7 @@ along with nmw-javadoc-resources.  If not, see <http://www.gnu.org/licenses />.
 		<dependencies>
 			<!-- Java EE -->
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>javaee-web-api-bom</artifactId><version>6.0.0${POST-SNAPSHOT}</version>
+				<groupId>com.aoindustries</groupId><artifactId>javaee-web-api-bom</artifactId><version>6.0.1-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -103,7 +99,7 @@ along with nmw-javadoc-resources.  If not, see <http://www.gnu.org/licenses />.
 		</dependency>
 		<!-- Dependency for dependencyversion-maven-plugin only -->
 		<dependency>
-			<groupId>com.newmediaworks</groupId><artifactId>nmw-javadoc-resources</artifactId><version>1.0.0-POST-SNAPSHOT</version>
+			<groupId>com.newmediaworks</groupId><artifactId>nmw-javadoc-resources</artifactId><version>1.0.1-SNAPSHOT</version>
 			<type>pom</type>
 			<scope>provided</scope>
 			<optional>true</optional>
