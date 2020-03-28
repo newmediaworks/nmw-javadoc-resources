@@ -48,4 +48,9 @@ along with nmw-javadoc-resources.  If not, see <http://www.gnu.org/licenses />.
 		<url>https://github.com/newmediaworks/nmw-javadoc-resources</url>
 		<tag>HEAD</tag>
 	</scm>
+
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/newmediaworks/nmw-javadoc-resources/issues</url>
+	</issueManagement>
 </project>
