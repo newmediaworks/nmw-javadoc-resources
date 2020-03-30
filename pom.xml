@@ -42,7 +42,6 @@ along with nmw-javadoc-resources.  If not, see <http://www.gnu.org/licenses />.
 	<inceptionYear>2019</inceptionYear>
 
 	<scm>
-		<!-- Can't inherit due to multi-module -->
 		<connection>scm:git:git://github.com/newmediaworks/nmw-javadoc-resources.git</connection>
 		<developerConnection>scm:git:git@github.com:newmediaworks/nmw-javadoc-resources.git</developerConnection>
 		<url>https://github.com/newmediaworks/nmw-javadoc-resources</url>
