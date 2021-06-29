@@ -33,6 +33,7 @@ along with nmw-javadoc-resources.  If not, see <http://www.gnu.org/licenses />.
 	<packaging>bundle</packaging>
 
 	<properties>
+		<module.name>com.newmediaworks.javadoc.resources</module.name>
 		<!-- Java 1.8 -->
 		<javase.version>1.8</javase.version>
 		<javase.release>8</javase.release>
@@ -80,4 +81,18 @@ along with nmw-javadoc-resources.  If not, see <http://www.gnu.org/licenses />.
 		<system>GitHub Issues</system>
 		<url>https://github.com/newmediaworks/nmw-javadoc-resources/issues</url>
 	</issueManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId><artifactId>maven-bundle-plugin</artifactId>
+				<configuration>
+					<instructions>
+						<!-- Java 1.8 -->
+						<Automatic-Module-Name>${module.name}</Automatic-Module-Name>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
