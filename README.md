@@ -6,6 +6,8 @@
 [![semantic versioning: 2.0.0](https://oss.newmediaworks.com/ao-badges/semver-2.0.0.svg)](http://semver.org/spec/v2.0.0.html)
 [![license: LGPL v3](https://oss.newmediaworks.com/ao-badges/license-lgpl-3.0.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
+[![Build](https://github.com/newmediaworks/nmw-javadoc-resources/workflows/Build/badge.svg?branch=master)](https://github.com/newmediaworks/nmw-javadoc-resources/actions?query=workflow%3ABuild)
+
 Javadoc resources for NMW-branded projects.
 
 ## Project Links
