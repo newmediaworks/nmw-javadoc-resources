@@ -40,7 +40,7 @@ along with nmw-javadoc-resources.  If not, see <http://www.gnu.org/licenses />.
 		<javadoc.link.javase>${javadoc.link.javase.8}</javadoc.link.javase>
 		<!-- This must be set in your ~/.m2/settings.xml when building with JDK < 9 -->
 		<javase.bootclasspath>${javase.bootclasspath.8}</javase.bootclasspath>
-		<!-- SonarCloud.io -->
+		<!-- SonarQube -->
 		<sonar.projectKey>${project.groupId}:${project.artifactId}</sonar.projectKey>
 		<sonar.organization>newmediaworks</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
