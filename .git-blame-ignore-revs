@@ -10,3 +10,6 @@
 
 # Significant manual code formatting clean-up…
 4c64b6bcab55cd81534620fe729432d58b820816
+
+# Added all whitespace-only commits to .git-blame-ignore-revs
+2b9833dbabee849cc7c587a84bdc6df677e14ead
