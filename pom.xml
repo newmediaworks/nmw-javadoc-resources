@@ -30,7 +30,7 @@ along with nmw-javadoc-resources.  If not, see <https://www.gnu.org/licenses/>.
   </parent>
 
   <groupId>com.newmediaworks</groupId><artifactId>nmw-javadoc-resources</artifactId><version>1.0.2-POST-SNAPSHOT</version>
-  <packaging>bundle</packaging>
+  <packaging>jar</packaging>
 
   <properties>
     <module.name>com.newmediaworks.javadoc.resources</module.name>
