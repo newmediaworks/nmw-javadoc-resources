@@ -25,9 +25,9 @@
 // Parent, Extensions, Plugins, Direct and BOM Dependencies
 def upstreamProjects = [
   // Parent
-  // Avoid cyclic dependency:
-  // TODO: Mutually trigger between nmw-oss-parent and nmw-javadoc-resources when not triggered by the other
-  // 'parent', // <groupId>com.newmediaworks</groupId><artifactId>nmw-oss-parent</artifactId>
+  'parent', // <groupId>com.newmediaworks</groupId><artifactId>nmw-oss-parent</artifactId>
+  // Parent Plugin Dependencies (Avoid cyclic dependency)
+  // Avoid cyclic dependency: 'javadoc-resources', // <groupId>com.newmediaworks</groupId><artifactId>nmw-javadoc-resources</artifactId>
 ]
 
 /******************************************************************************************
