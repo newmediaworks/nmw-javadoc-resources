@@ -37,7 +37,7 @@ along with nmw-javadoc-resources.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2019-10-13T22:22:56-05:00"
-    dateModified="2023-09-20T15:25:22Z"
+    dateModified="2023-09-20T16:47:30Z"
     allowRobots="false"
   >
     <c:set var="latestRelease" value="1.0.2" />
@@ -114,7 +114,7 @@ along with nmw-javadoc-resources.  If not, see <https://www.gnu.org/licenses/>.
         </li>
         <li>
           Added <code>resources/fonts/dejavu.css</code> to avoid 404's due to
-          <ao:a href="https://bugs.openjdk.java.net/browse/JDK-8129828">JDK bug 8129828</ao:a>.
+          <ao:a href="https://bugs.openjdk.org/browse/JDK-8129828">JDK bug 8129828</ao:a>.
         </li>
       </ul>
     </changelog:release>
