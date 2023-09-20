@@ -1,6 +1,6 @@
 /*
  * nmw-javadoc-resources - Javadoc resources for NMW-branded projects.
- * Copyright (C) 2019  New Media Works
+ * Copyright (C) 2023  New Media Works
  *     info@newmediaworks.com
  *     703 2nd Street #465
  *     Santa Rosa, CA 95404
@@ -20,17 +20,6 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with nmw-javadoc-resources.  If not, see <https://www.gnu.org/licenses/>.
  */
-
-/*
- * The Javadoc tool in Java 1.8 uses a default stylesheet that performs an
- * import of a missing resource:
- *
- * @import url('resources/fonts/dejavu.css');
- *
- * This is listed as bug 8129828:
- * https://bugs.openjdk.java.net/browse/JDK-8129828
- *
- * To avoid the overhead and delays of repeated 404's, we have created this
- * placeholder CSS file.  This will remain in place until this JDK bug is
- * resolved.
- */
+// Avoid cyclic dependency: Being in src/main/java-11 (instead of src/main/java) avoids some of the cycles
+module com.newmediaworks.javadoc.resources {
+}

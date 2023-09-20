@@ -29,17 +29,15 @@ along with nmw-javadoc-resources.  If not, see <https://www.gnu.org/licenses/>.
     <relativePath>../parent/pom.xml</relativePath>
   </parent>
 
-  <groupId>com.newmediaworks</groupId><artifactId>nmw-javadoc-resources</artifactId><version>1.0.2-POST-SNAPSHOT</version>
+  <groupId>com.newmediaworks</groupId><artifactId>nmw-javadoc-resources</artifactId><version>1.1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <properties>
     <!-- Must be set to ${git.commit.time} for snapshots or ISO 8601 timestamp for releases. -->
     <project.build.outputTimestamp>${git.commit.time}</project.build.outputTimestamp>
     <module.name>com.newmediaworks.javadoc.resources</module.name>
-    <!-- Java 1.8 -->
-    <javase.version>1.8</javase.version>
-    <javase.release>8</javase.release>
-    <javadoc.link.javase>${javadoc.link.javase.8}</javadoc.link.javase>
+    <!-- Java 11 inherited from parent -->
+    <!-- Matches "requireJavaVersion" from ao-oss-parent -->
   </properties>
 
   <name>NMW Javadoc Resources</name>
@@ -109,16 +107,12 @@ along with nmw-javadoc-resources.  If not, see <https://www.gnu.org/licenses/>.
   </repositories>
 
   <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.felix</groupId><artifactId>maven-bundle-plugin</artifactId>
-        <configuration>
-          <instructions>
-            <!-- Java 1.8 -->
-            <Automatic-Module-Name>${module.name}</Automatic-Module-Name>
-          </instructions>
-        </configuration>
-      </plugin>
-    </plugins>
+    <!--
+      module-info.java moved to src/main/java-11, since chicken-and-egg issue activated in parent when
+      src/main/java is present.  The parent adds nmw-javadoc-offline as a plugin dependency.  This, in-turn,
+      will attempt to fetch the dependency, not using this version from the reactor build.  This may cause the
+      build to fail when switching to a new version of nmw-javadoc-offline.
+    -->
+    <sourceDirectory>src/main/java-11</sourceDirectory>
   </build>
 </project>

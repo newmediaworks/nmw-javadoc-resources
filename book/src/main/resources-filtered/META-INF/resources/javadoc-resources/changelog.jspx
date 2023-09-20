@@ -37,7 +37,8 @@ along with nmw-javadoc-resources.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2019-10-13T22:22:56-05:00"
-    dateModified="2021-07-07T03:02:28-05:00"
+    dateModified="2023-09-20T15:25:22Z"
+    allowRobots="false"
   >
     <c:set var="latestRelease" value="1.0.2" />
     <c:if test="${
@@ -52,7 +53,15 @@ along with nmw-javadoc-resources.  If not, see <https://www.gnu.org/licenses/>.
         artifactId="@{documented.artifactId}"
         repository="@{nexusUrl}content/repositories/snapshots/"
         scmUrl="@{project.scm.url}"
-      />
+      >
+        <ul>
+          <li>Minimum Java version changed from 1.8 to 11.</li>
+          <li>
+            Removed <code>resources/fonts/dejavu.css</code> that was a workaround for
+            <ao:a href="https://bugs.openjdk.org/browse/JDK-8129828">JDK bug 8129828</ao:a>.
+          </li>
+        </ul>
+      </changelog:release>
     </c:if>
 
     <changelog:release
@@ -62,6 +71,7 @@ along with nmw-javadoc-resources.  If not, see <https://www.gnu.org/licenses/>.
       groupId="@{project.groupId}"
       artifactId="@{documented.artifactId}"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Now supports Java 9+ modules with included <code>Automatic-Module-Name</code> manifest entry.</li>
@@ -75,6 +85,7 @@ along with nmw-javadoc-resources.  If not, see <https://www.gnu.org/licenses/>.
       groupId="@{project.groupId}"
       artifactId="@{documented.artifactId}"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>
@@ -91,6 +102,7 @@ along with nmw-javadoc-resources.  If not, see <https://www.gnu.org/licenses/>.
       groupId="@{project.groupId}"
       artifactId="@{documented.artifactId}"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>New project for Javadoc resources for NMW-branded projects.</li>
