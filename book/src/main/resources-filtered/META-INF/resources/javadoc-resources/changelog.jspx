@@ -37,10 +37,10 @@ along with nmw-javadoc-resources.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2019-10-13T22:22:56-05:00"
-    dateModified="2023-09-22T04:02:26Z"
+    dateModified="2023-09-25T02:12:59Z"
     allowRobots="false"
   >
-    <c:set var="latestRelease" value="1.0.2" />
+    <c:set var="latestRelease" value="1.1.0" />
     <c:if test="${
       fn:endsWith('@{project.version}', '-SNAPSHOT')
       and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')
@@ -53,12 +53,22 @@ along with nmw-javadoc-resources.  If not, see <https://www.gnu.org/licenses/>.
         artifactId="@{documented.artifactId}"
         repository="@{nexusUrl}content/repositories/snapshots/"
         scmUrl="@{project.scm.url}"
-      >
-        <ul>
-          <li>Minimum Java version changed from 1.8 to 11.</li>
-        </ul>
-      </changelog:release>
+      />
     </c:if>
+
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.1.0"
+      datePublished="2023-09-25T02:12:59Z"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
+    >
+      <ul>
+        <li>Minimum Java version changed from 1.8 to 11.</li>
+      </ul>
+    </changelog:release>
 
     <changelog:release
       projectName="@{documented.name}"
