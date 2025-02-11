@@ -41,9 +41,6 @@ along with nmw-javadoc-resources.  If not, see <https://www.gnu.org/licenses/>.
     <documented.artifactId>nmw-javadoc-resources</documented.artifactId>
     <documented.name>NMW Javadoc Resources</documented.name>
     <documented.description>Javadoc resources for NMW-branded projects.</documented.description>
-    <!-- Java 1.8 -->
-    <documented.javase.version>1.8</documented.javase.version>
-    <documented.javadoc.link.javase>${javadoc.link.javase.8}</documented.javadoc.link.javase>
 
     <description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
   </properties>
