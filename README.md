@@ -19,7 +19,7 @@ Javadoc resources for NMW-branded projects.
 ## Project Links
 * [Project Home](https://oss.newmediaworks.com/javadoc-resources/)
 * [Changelog](https://oss.newmediaworks.com/javadoc-resources/changelog)
-* [Maven Central Repository](https://central.sonatype.com/artifact/com.newmediaworks/nmw-javadoc-resources)
+* [Central Repository](https://central.sonatype.com/artifact/com.newmediaworks/nmw-javadoc-resources)
 * [GitHub](https://github.com/newmediaworks/nmw-javadoc-resources)
 
 ## Contact Us

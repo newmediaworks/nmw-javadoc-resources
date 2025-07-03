@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 nmw-javadoc-resources - Javadoc resources for NMW-branded projects.
-Copyright (C) 2019, 2020, 2021, 2022, 2023  New Media Works
+Copyright (C) 2019, 2020, 2021, 2022, 2023, 2025  New Media Works
     info@newmediaworks.com
     703 2nd Street #465
     Santa Rosa, CA 95404
@@ -37,7 +37,7 @@ along with nmw-javadoc-resources.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2019-10-13T22:22:56-05:00"
-    dateModified="2023-09-25T02:12:59Z"
+    dateModified="2025-07-02T23:05:45Z"
     allowRobots="false"
   >
     <c:set var="latestRelease" value="1.1.0" />
@@ -51,7 +51,6 @@ along with nmw-javadoc-resources.  If not, see <https://www.gnu.org/licenses/>.
         version="@{project.version}"
         groupId="@{project.groupId}"
         artifactId="@{documented.artifactId}"
-        repository="@{nexusUrl}content/repositories/snapshots/"
         scmUrl="@{project.scm.url}"
       />
     </c:if>
