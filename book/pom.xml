@@ -37,6 +37,9 @@ along with nmw-javadoc-resources.  If not, see <https://www.gnu.org/licenses/>.
     <project.build.outputTimestamp>${git.commit.time}</project.build.outputTimestamp>
     <module.name>com.newmediaworks.javadoc.resources.book</module.name>
     <subproject.subpath>book/</subproject.subpath>
+    <!-- Java 17 -->
+    <javase.version>17</javase.version>
+    <javase.release>17</javase.release>
     <!-- These values are copied from the project being documented -->
     <documented.artifactId>nmw-javadoc-resources</documented.artifactId>
     <documented.name>NMW Javadoc Resources</documented.name>
